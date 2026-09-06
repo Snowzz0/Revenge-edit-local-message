@@ -8,9 +8,10 @@
 - Mantém o estado original caso você cancele
 
 ## 📥 Instalação
-1. Copie a URL do repositório
-2. No Revenge, vá em Plugins > Instalar > URL
-3. Cole: `https://raw.githubusercontent.com/Snowzz0/Revenge-edit-local-message/main/dist/index.js`
+1. Execute `npm install && npm run build`
+2. Envie `manifest.json` e `index.js` para o GitHub
+3. No Revenge, vá em Plugins > Instalar por URL
+4. Cole: `https://raw.githubusercontent.com/Snowzz0/Revenge-edit-local-message/main/manifest.json`
 
 ## ⚠️ Aviso
 Isso é puramente visual. O Discord não salva sua edição.

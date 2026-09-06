@@ -9,7 +9,7 @@
     "resolveJsonModule": true,
     "moduleResolution": "node",
     "noEmit": false,
-    "outDir": "./dist",
+    "outDir": "./",
     "rootDir": "./src",
     "allowJs": true,
     "checkJs": false,
