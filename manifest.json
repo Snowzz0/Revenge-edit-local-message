@@ -1,0 +1,8 @@
+{
+  "name": "Edit Locally",
+  "description": "Edite mensagens de outros usuários localmente",
+  "author": "Snowzz0",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "index.js"
+}

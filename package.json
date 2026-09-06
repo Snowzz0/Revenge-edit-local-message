@@ -1,0 +1,8 @@
+{
+  "name": "revenge-edit-locally",
+  "version": "1.0.0",
+  "main": "src/index.tsx",
+  "scripts": {
+    "build": "node build.mjs"
+  }
+}

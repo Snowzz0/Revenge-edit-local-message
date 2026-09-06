@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✎ Edit Locally Plugin</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            padding: 40px;
+            text-align: center;
+        }
+        h1 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        .description {
+            color: #666;
+            margin: 20px 0;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .install-section {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+        .install-section h2 {
+            color: #333;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+        .plugin-url {
+            background: white;
+            border: 2px solid #667eea;
+            padding: 12px;
+            border-radius: 6px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.95em;
+            word-break: break-all;
+            color: #667eea;
+            font-weight: bold;
+        }
+        .copy-btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-size: 1em;
+            transition: background 0.3s;
+        }
+        .copy-btn:hover {
+            background: #764ba2;
+        }
+        .features {
+            text-align: left;
+            margin: 30px 0;
+        }
+        .features h2 {
+            color: #333;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+        .features ul {
+            list-style: none;
+            color: #666;
+        }
+        .features li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        .features li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+        }
+        .footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #999;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>✎ Edit Locally</h1>
+        <p class="description">Plugin para editar mensagens de outros usuários localmente no Revenge</p>
+        
+        <div class="install-section">
+            <h2>Como instalar</h2>
+            <p style="color: #666; margin-bottom: 15px;">Use esta URL no Revenge para instalar o plugin:</p>
+            <div class="plugin-url" id="pluginUrl">https://snowzz0.github.io/Revenge-edit-local-message</div>
+            <button class="copy-btn" onclick="copyToClipboard()">Copiar URL</button>
+        </div>
+
+        <div class="features">
+            <h2>Recursos</h2>
+            <ul>
+                <li>Edite mensagens de outros usuários localmente</li>
+                <li>As edições aparecem apenas para você</li>
+                <li>Suporta qualquer conteúdo de mensagem</li>
+                <li>Interface integrada ao Revenge</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>Made with ❤️ by <strong>Snowzz0</strong></p>
+            <p><a href="https://github.com/Snowzz0/Revenge-edit-local-message" style="color: #667eea; text-decoration: none;">GitHub</a></p>
+        </div>
+    </div>
+
+    <script>
+        function copyToClipboard() {
+            const url = document.getElementById('pluginUrl').textContent;
+            navigator.clipboard.writeText(url).then(() => {
+                const btn = event.target;
+                const originalText = btn.textContent;
+                btn.textContent = '✓ Copiado!';
+                setTimeout(() => {
+                    btn.textContent = originalText;
+                }, 2000);
+            });
+        }
+    </script>
+</body>
+</html>
