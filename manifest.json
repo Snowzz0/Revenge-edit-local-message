@@ -4,6 +4,5 @@
   "author": "Snowzz0",
   "version": "1.0.0",
   "license": "MIT",
-  "main": "index.js",
-  "hash": "a7c06733b1b35ba72e353420e67b9eeb3f87c93403e95f3462b08bb44407967d"
+  "main": "dist/index.js"
 }

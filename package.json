@@ -1,19 +1,8 @@
 {
-  "name": "Edit Locally",
-  "description": "Edite mensagens de outros usuários localmente",
-  "author": "Snowzz0",
+  "name": "revenge-edit-locally",
   "version": "1.0.0",
-  "license": "MIT",
-  "main": "index.js",
+  "main": "src/index.tsx",
   "scripts": {
     "build": "node build.mjs"
-  },
-  "devDependencies": {
-    "@types/react": "^18.0.0",
-    "typescript": "^5.0.0",
-    "@rollup/plugin-commonjs": "^28.0.0",
-    "@rollup/plugin-node-resolve": "^16.0.0",
-    "rollup": "^4.0.0",
-    "rollup-plugin-esbuild": "^6.1.1"
   }
 }
