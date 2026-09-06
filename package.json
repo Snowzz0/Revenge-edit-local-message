@@ -1,0 +1,14 @@
+{
+  "name": "revenge-edit-locally",
+  "version": "1.0.0",
+  "description": "Edit messages locally in Revenge/Vendetta",
+  "main": "src/index.tsx",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "typescript": "^5.0.0"
+  }
+}

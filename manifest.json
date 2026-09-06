@@ -1,0 +1,10 @@
+{
+  "name": "Edit Locally",
+  "description": "Edite mensagens de outros usuários localmente (só você vê)",
+  "author": "SeuNome",
+  "version": "1.0.0",
+  "license": "MIT",
+  "vendetta": {
+    "icon": "ic_edit_24px"
+  }
+}
